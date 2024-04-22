@@ -10,6 +10,7 @@ from django.http import HttpResponse
 from django.contrib.auth.views import logout_then_login
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth import logout as auth_logout
+from django.http import HttpResponseRedirect
 
 os.environ["API_KEY"] = "AIzaSyBSsyGiTNZbXhnGngA2EEbOnA4n9Rqx7nc"
 genai.configure(api_key=os.environ["API_KEY"])

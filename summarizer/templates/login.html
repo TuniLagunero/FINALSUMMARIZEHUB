@@ -9,7 +9,7 @@
         WELCOME TO SUMMARIZEHUB
       </div>
       <form method="post">
-        {% csrf_token %}
+        <input type="hidden" name="csrfmiddlewaretoken" value="{% csrf_token %}">
         <div class="field">
           <input type="text" name="username" required>
           <label>Email Address</label>
